@@ -1,0 +1,155 @@
+﻿h1 {
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 113%;
+  color: #333;
+	@media (max-width: $breakpoint-mobile) {
+		font-size:2.4rem;
+	}
+}
+.breadcrumbs {
+  margin-bottom: 4.5rem;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    li {
+      font-weight: 400;
+      font-size: 1.3rem;
+      line-height: 169%;
+      color: #b6b5b5;
+    }
+  }
+}
+.product-detail-page {
+  &__title {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .share-icon {
+    flex: none;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: 100rem auto;
+    gap: 2.7rem;
+    margin-bottom: 5rem;
+		@media (max-width: 1200px) {
+			grid-template-columns: 60% auto;
+		}
+		@media (max-width: $breakpoint-mobile) {
+			display:block;
+		}
+  }
+  &__offer {
+    font-weight: 700;
+    font-size: 2.6rem;
+    line-height: 145%;
+    color: #555;
+    margin-bottom: 2.2rem;
+  }
+  &__params {
+    margin-bottom: 3rem;
+  }
+  &__param {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #ececec;
+    padding: 2rem 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 127%;
+    color: #333;
+    &-name {
+      color: #999;
+    }
+  }
+  &__squares {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  &__square {
+    &-block {
+      border-radius: 3px;
+      height: 6rem;
+      margin-bottom: 1rem;
+      &_spec {
+        background: url(../img/spec-sheet.svg) center no-repeat #001899;
+      }
+      &_whatsapp {
+        background: url(../img/whatsapp_white.svg) center no-repeat #48c95f;
+      }
+    }
+    &-name {
+      font-weight: 400;
+      font-size: 1.2rem;
+      line-height: 169%;
+      color: #333;
+    }
+  }
+  &__details {
+    &-title {
+      font-weight: 400;
+      font-size: 3.2rem;
+      line-height: 113%;
+      color: #333;
+      margin-bottom: 3rem;
+			@media (max-width: $breakpoint-mobile) {
+				font-size:2.4rem;
+			}
+    }
+    &-params {
+      max-width: 49.6rem;
+    }
+    &-param {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-bottom: 1px solid #ececec;
+      padding: 2rem 0;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 127%;
+      color: #333;
+      &__name {
+        color: #999;
+      }
+    }
+  }
+}
+.product-form {
+  form {
+    input[type='text'],
+    input[type='tel'],
+    input[type='email'],
+    select {
+      border: 1px solid #ececec;
+      border-radius: 3px;
+      width: 100%;
+      height: 6rem;
+      background: #f8f8f8;
+      font-size: 1.4rem;
+      font-weight: 500;
+      padding: 0 1.7rem;
+      margin-bottom: 0.5rem;
+    }
+
+    textarea {
+      border: 1px solid #ececec;
+      border-radius: 3px;
+      width: 100%;
+      height: 14.8rem;
+      background: #f8f8f8;
+      font-size: 1.4rem;
+      font-weight: 500;
+      padding: 1.7rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

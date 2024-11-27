@@ -1,0 +1,51 @@
+main.main
+	.section-news.section-news_page
+		.container 
+			.section-news__top
+				h1.h1 Новости
+				.section-news__sort 
+					span По годам
+					.select
+						select 
+							option 2024
+							option 2023
+							option 2022
+						span.focus
+			.section-news__items
+				- let count2 = 0;
+					while count2 < 4
+						- count2 += 1;
+						.section-news__item
+							a.section-news__img(href="")
+								img(src="./img/news1.jpg" alt="")
+							.section-news__date 16.02.2023
+							a.section-news__name(href="") Принято решение о начале проектирования новых тепловых станций в микрорайонах Чкаловск и Прибрежный
+						.section-news__item
+							a.section-news__img(href="")
+								img(src="./img/news2.jpg" alt="")
+							.section-news__date 16.02.2023
+							a.section-news__name(href="") Задолженность калининградцев за отопление уменьшилась еще на 10 миллионов рублей
+						.section-news__item
+							a.section-news__img(href="")
+								img(src="./img/news3.jpg" alt="")
+							.section-news__date 16.02.2023
+							a.section-news__name(href="") «При нападении противника на территорию расположения котельной — котельные во всех случаях работу не прекращают»...
+						.section-news__item
+							a.section-news__img(href="")
+								img(src="./img/news4.jpg" alt="")
+							.section-news__date 16.02.2023
+							a.section-news__name(href="") В 2023 году МП «Калининградтеплосеть» закроет три угольные котельные
+			.pagination 
+				ul 
+					li 
+						a(href="")
+							<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22.5C6.47715 22.5 2 18.0228 2 12.5C2 6.97715 6.47715 2.5 12 2.5C17.5228 2.5 22 6.97715 22 12.5C22 18.0228 17.5228 22.5 12 22.5ZM11.5303 8.96967C11.2374 8.67678 10.7626 8.67678 10.4697 8.96967L7.46967 11.9697C7.17678 12.2626 7.17678 12.7374 7.46967 13.0303L10.4697 16.0303C10.7626 16.3232 11.2374 16.3232 11.5303 16.0303C11.8232 15.7374 11.8232 15.2626 11.5303 14.9697L9.81066 13.25H16C16.4142 13.25 16.75 12.9142 16.75 12.5C16.75 12.0858 16.4142 11.75 16 11.75H9.81066L11.5303 10.0303C11.8232 9.73744 11.8232 9.26256 11.5303 8.96967Z" fill="#1E1E1E" /></svg>
+					li 
+						span 1
+					li 
+						a(href="") 2
+					li 
+						a(href="") 3
+					li 
+						a(href="")
+							<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 22.5C17.5228 22.5 22 18.0228 22 12.5C22 6.97715 17.5228 2.5 12 2.5C6.47715 2.5 2 6.97715 2 12.5C2 18.0228 6.47715 22.5 12 22.5ZM12.4697 8.96967C12.7626 8.67678 13.2374 8.67678 13.5303 8.96967L16.5303 11.9697C16.8232 12.2626 16.8232 12.7374 16.5303 13.0303L13.5303 16.0303C13.2374 16.3232 12.7626 16.3232 12.4697 16.0303C12.1768 15.7374 12.1768 15.2626 12.4697 14.9697L14.1893 13.25H8C7.58579 13.25 7.25 12.9142 7.25 12.5C7.25 12.0858 7.58579 11.75 8 11.75H14.1893L12.4697 10.0303C12.1768 9.73744 12.1768 9.26256 12.4697 8.96967Z" fill="#1E1E1E" /></svg>

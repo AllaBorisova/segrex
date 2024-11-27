@@ -1,0 +1,53 @@
+﻿.section-important{
+	background: #dbe2f2;
+	padding-top: 5rem;
+	padding-bottom: 3rem;
+	&__items{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		gap:1rem;
+		@media (max-width: $breakpoint-mobile) {
+			grid-template-columns: 1fr;
+		}
+		&_right{
+			grid-template-columns: 1fr;
+			padding:1rem;
+			background: #dbe2f2;
+			border-radius: 0.5rem;
+		}
+	}
+	&__item{
+		padding:2rem;
+		background: #fff;
+		border-radius: 0.5rem;
+	}
+	&__date{
+		font-weight: 400;
+		font-size: 1.4rem;
+		color: rgba(30, 30, 30, 0.5);
+		margin-bottom: 1.5rem;
+	}
+	&__name{
+		font-weight: 400;
+		font-size: 2.4rem;
+		@include tr;
+		@media (max-width: $breakpoint-mobile) {
+			font-size: 1.8rem;
+		}
+		&:hover{
+			color:$color-primary;
+		}
+	}
+	&__item_big{
+		grid-row:span 2;
+		@media (max-width: $breakpoint-mobile) {
+			grid-row:span 1;
+		}
+		.section-important__name{
+			font-size: 3.2rem;
+			@media (max-width: $breakpoint-mobile) {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}

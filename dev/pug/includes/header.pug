@@ -1,0 +1,46 @@
+.bg-menu
+header.header
+	.container
+		.header__inner
+			a.logo(href="index.html")
+				img(src="./img/logo.svg" alt="")
+			.header-search 
+				form.header-search__form
+					input(type="text" placeholder="Search")
+					input(type="submit" value="")
+			.header__phone 
+				a(href="tel:+7 900 00-00-000") +7 900 00-00-000
+			.header__socials 
+				a(href="")
+					img(src="./img/tg.svg")
+				a(href="")
+					img(src="./img/whatsapp.svg")
+			button.hamburger(type="button")
+				.hamburger__button
+					span
+					span
+					span
+
+nav.nav-menu
+	.container
+		ul 
+			li
+				a(href="")
+					img(src="./img/menu-icon.svg" alt="")
+					| VEHICLES
+			li
+				a(href="")
+					img(src="./img/lightning.svg" alt="")
+					| STOCK CLEARANCE
+			li
+				a(href="") ABOUT
+			li
+				a(href="") OUR TEAM
+			li
+				a(href="") OUR SHOWROOMS
+.header-new-popup 
+	.header-new-popup__inner 
+		.header-new-popup__close 
+		//- .header-new-popup__subtitle Меню:
+		.header-new-popup__list 
+			+list-links('VEHICLES','STOCK CLEARANCE','ABOUT','OUR TEAM','OUR SHOWROOMS')
