@@ -46,31 +46,32 @@ jQuery(document).ready(function ($) {
   //   $('.main-slider__slider').slick('slickNext');
   // } );
 
-  // $('.gallery-block__slider-for').slick({
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   arrows: false,
-  //   fade: true,
-  //   adaptiveHeight: true,
-  //   asNavFor: '.gallery-block__slider-nav'
-  // } );
-  // $('.gallery-block__slider-nav').slick({
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   asNavFor: '.gallery-block__slider-for',
-  //   dots: false,
-  //   arrows: false,
-  //   centerMode: false,
-  //   focusOnSelect: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: 2,
-  //       },
-  //     },
-  //   ],
-  //   });
+  $('.product-detail-page-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    adaptiveHeight: false,
+    asNavFor: '.product-detail-page-thumbs'
+  } );
+  $('.product-detail-page-thumbs').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    asNavFor: '.product-detail-page-slider',
+    arrows: false,
+    dots: false,
+    centerMode: false,
+    infinite: true,
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+    });
   // $('.gallery-block__prev').click(function () {
   //   $('.gallery-block__slider-for').slick('slickPrev');
   // });

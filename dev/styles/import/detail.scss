@@ -46,6 +46,14 @@
 		@media (max-width: $breakpoint-mobile) {
 			display:block;
 		}
+    .product-detail-page-thumbs {
+      .slick-list{
+        margin:0 -0.5rem;
+      }
+      .slick-slide{
+        margin:0 0.5rem;
+      }
+  }
   }
   &__offer {
     font-weight: 700;
